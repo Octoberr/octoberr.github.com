@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>task0005</title>
+    <style type="text/css">
+        body {font-family:"Microsoft YaHei";background-color:#D3D3D3;margin: 0;}
+        h1,h2{font-style: normal}
+        .main{position: relative;}
+        /*头部 文章 脚的样式*/
+        header{height:100px;background-color: #303030;margin: 0;}
+        .maingroup{background-color: #FFF;padding: 20px;box-shadow: 2px 2px gray;margin-right: 450px;}
+        footer{width: 100%;height: 60px;color: #FFF;background-color: #303030;text-align: center;line-height: 60px;}
+        /*头部区域*/
+        header h1{margin-left: 100px;}
+        header ul{float: right;margin-right: 10px;font-size: 14px;letter-spacing: 0.1em;}
+        header li{float: left;margin-right: 35px;}
+        header a{color: #FFF;text-decoration: none;}
+        /*内容区域*/
+        .main-two ol{list-style: none;}
+        .main-three figure{border:1px solid #D3D3D3;width: 150px;text-align: center;line-height: 40px;float: left;margin: 20px;}
+        .main-three img{width: 100px;height: 120px;}
+        /*表格样式*/
+        .main-four thead{color: #FFF; background-color:#303030;text-align: left;}
+        .main-four table{width: 100%}
+        .main-four tfoot{background-color: #D3D3D3}
+        /*表单样式*/
+        .main-aside form{line-height: 40px;}
+        span.prompt {color: #D3D3D3;}
+        .formsubmit{color: #FFF;background-color: #36F;border-radius: 13px;width: 100%;line-height: 40px;font-family: "Microsoft YaHei";font-size: 16px;}
+        /*侧栏样式*/
+        .main-aside{background-color: #FFF;width: 400px;padding: 10px;box-shadow: 2px 2px gray;position: absolute;right: 20px;top: 0;}
+        .main-aside h3{border-left: 5px solid #D3D3D3;padding: 10px 20px;margin-left: 30px;}
+
+        /*清除图片区域的浮动
+        article#artpicture{overflow: auto;} 另一种清除浮动的方法*/
+        .group:before,.group:after{content: "";display: table;}
+        .group:after{clear: both;}
+        .group{*zoom:1;}
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>网站一级标题</h1>
+    <ul>
+        <li><a href="#">导航链接一</a></li>
+        <li><a href="#">导航链接二</a></li>
+        <li><a href="#">导航链接三</a></li>
+        <li><a href="#">导航链接四</a></li>
+    </ul>
+</header>
+<div class="main">
+    <div class="maingroup">
+        <div class="main-one">
+            <article >
+                <h1>文章一级标题</h1>
+                <h2>文章二级标题</h2>
+                <p>文章作者 &nbsp 文章发表时间</p>
+                <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br />这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有个链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+                <img src="15.jpg" width="300" height="320"/><br/>
+                <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" target="_blank">这里有个链接点击后打开新窗口链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+            </article>
+        </div>
+        <div class="main-two">
+            <article>
+                <h2>文章二级标题</h2>
+                <p>文章作者 &nbsp 文章发表时间</p>
+                <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br />这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有个链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+                <img src="member1.png" width="300" height="320"/><br/>
+                <ol>
+                    <li>列表项目一</li>
+                    <li>列表项目二</li>
+                    <li>列表项目三</li>
+                </ol>
+            </article>
+        </div>
+        <div class="main-three">
+            <article class="group">
+                <h2>图片</h2>
+                <figure>
+                    <figcaption>好看的图片</figcaption>
+                    <img src="14.jpg"  alt="meinv"/>
+                </figure>
+                <figure >
+                    <figcaption>好看的图片</figcaption>
+                    <img src="20.jpg"  alt="meinv"/>
+                </figure>
+                <figure >
+                    <figcaption>好看的图片</figcaption>
+                    <img src="26.jpg"  alt="meinv"/>
+                </figure>
+                <figure >
+                    <figcaption>好看的图片</figcaption>
+                    <img src="28.jpg"  alt="meinv"/>
+                </figure>
+                <figure >
+                    <figcaption>好看的图片</figcaption>
+                    <img src="29.jpg"  alt="meinv"/>
+                </figure>
+                <figure >
+                    <figcaption>好看的图片</figcaption>
+                    <img src="29.jpg"  alt="meinv"/>
+                </figure>
+                <figure >
+                    <figcaption>好看的图片</figcaption>
+                    <img src="28.jpg"  alt="meinv"/>
+                </figure>
+                <figure >
+                    <figcaption>好看的图片</figcaption>
+                    <img src="20.jpg"  alt="meinv"/>
+                </figure>
+            </article>
+        </div>
+        <div class="main-four">
+            <article>
+                <h2>文章二级标题</h2>
+                <p>文章作者 文章发表时间</p>
+                <ol>
+                    <li>排名1</li>
+                    <li>排名2</li>
+                    <li>排名3</li>
+                </ol>
+                <p>下面是一个表格</p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>表头</th>
+                        <th>表头</th>
+                        <th>表头</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td>总计</td>
+                        <td colspan="2">1000</td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </article>
+        </div>
+    </div>
+
+    <div class="main-aside">
+        <aside>
+            <h3>这里以后是一个侧栏，这是侧栏的标题	</h3>
+            <form>
+                    <label>请输入邮箱地址：<input type="email" name="email"/><br></label>
+                    <label><span class="prompt">邮箱地址按照要求格式输入</span><br></label>
+                    <label>请输入密码：<input type="password" name="password"/><br></label>
+                    <label>请再次输入密码：<input type="password" name="password"/><br></label>
+                 <span class="prompt">密码请为6-16位英文数字</span><br>
+                   <label> 性别：
+                       <input type="radio" name="gender" value="male"/>男
+                       <input type="radio" name="gender" value="female"/>女
+                       <br></label>
+               <label> 城市：
+                   <select name="select">
+                       <option value="01">北京</option>
+                       <option value="02">上海</option>
+                       <option value="03">广州</option>
+                   </select>
+                   <br></label>
+                    <label>爱好：
+                        <input type="checkbox" name="checkbox" value="01"/>运动
+                        <input type="checkbox" name="checkbox" value="02"/>艺术
+                        <input type="checkbox" name="checkbox" value="03"/>科学
+                        <br></label>
+                <label>个人描述：
+                    <br></label>
+                   <label> <textarea name="describeself" placeholder="这是一个输入框 输入您的个人描述" cols="30" rows="6"></textarea><br>
+                       <br></label>
+                   <label> <input type="submit" class="formsubmit" value="确认提交"></label>
+            </form>
+        </aside>
+    </div>
+</div>
+</body>
+</html>
